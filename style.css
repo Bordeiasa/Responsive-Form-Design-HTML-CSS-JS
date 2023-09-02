@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    color: #2f2f2f;
+}
+
+.img {
+    background: #ff837b url("./img.png") no-repeat center center / cover;
+    flex: 1.5;  
+}
+
+.contact-section {
+    height: 100vh;
+    flex: 1;
+    flex-direction: column;
+}
+
+.links {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin: 1rem;
+}
+
+.links li a {
+    margin-right: 1.4rem;
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #2f2f2f;
+}
+
+.links li a.active {
+    text-decoration: underline #ff837b 3px;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.form_section {
+    margin: 3rem 0rem 3rem 5rem;
+}
+
+.form_group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.form_group label {
+    margin: 1.5rem 0rem 0.8rem;
+    font-size: 1.2rem;
+}
+
+.form_group input {
+    width: 80%;
+    border: none;
+    outline: none;
+    background: #eee;
+    padding: 0.4rem 0.8rem;
+    font-size: 1.4rem;
+    color: #2f2f2f;
+    border-radius: 5px;
+}
+
+.form_group input:focus {
+    box-shadow: 0 0 8px rgba(255, 131, 123, 0.55);
+}
+
+.form_group button {
+    width: 80%;
+    margin: 3rem 0;
+    border: none;
+    outline: none;
+    background: #ff837b;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    font-size: 1.4rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+p.form_option {
+    font-size: 1.2rem;
+    margin: 2rem;
+}
+
+a.link {
+    color: #ff837b;
+}
+
+.login_form {
+    display: none;
+}
+
+@media screen and (max-width: 1000px) {
+    .img {
+        flex: 1;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .img {
+        display: none;
+    }
+}
